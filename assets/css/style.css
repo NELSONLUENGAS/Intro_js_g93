@@ -1,0 +1,12 @@
+.bg_red {
+	background-color: red;
+}
+
+.font_bold {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+body {
+	background-color: black;
+}

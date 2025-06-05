@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro JS</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <h1>Mis datos</h1>
+
+    <p id="nombre">
+        <!-- Se agregará por JS -->
+    </p>
+    <p id="edad"></p>
+
+    <div id="message"></div>
+
+
+
+    <script>
+        //Comentarios
+
+        // De una línea
+
+        /* Devarias líneas
+            -Otro comentario
+            -Otro comentario
+            -Otro comentario
+            -Otro comentario
+            -Otro comentario
+        */
+
+        // alert('Hola')
+        // var isConfirm = confirm('Estás seguro?')
+        var nombre = prompt('Escribe tu nombre ')
+        var edad = Number(prompt("Escribe tu edad"))
+
+        // `` ctrl + alt + }
+        // ``  + }
+        var message = `<h1>Hola mi nombre es: ${nombre} y tengo ${edad} años</h1>`
+
+        // DOM 
+        var nombreTag = document.getElementById('nombre')
+        var edadTag = document.querySelector('#edad')
+        var messageTag = document.querySelector('div')
+
+        // asignar texto a una etiqueta html
+        nombreTag.innerText = nombre
+        edadTag.innerText = edad
+        messageTag.innerHTML = message
+
+        nombreTag.classList = "bg_red font_bold"
+        nombreTag.style.textAlign = "center"
+
+    </script>
+</body>
+
+</html>
